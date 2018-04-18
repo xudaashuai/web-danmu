@@ -3,7 +3,7 @@ var app = new koa();
 var fs = require('fs');
 var serve = require('koa-static');
 // static file
-app.use(serve(__dirname+'\\dist'));
+app.use(serve(__dirname+'/dist'));
 
 // hook socket.io
 var server = require('http').createServer(app.callback());
