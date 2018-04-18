@@ -42,7 +42,7 @@
     },
     created() {
       this.$nextTick(() => {
-        this.socket = new IO('ws://118.24.24.60:3000?id=123');
+        this.socket = new IO('ws://118.24.24.60?id=123');
         this.socket.on('message',data=>{
           this.messages.push(data)
         })
