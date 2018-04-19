@@ -41,7 +41,7 @@
     margin: 0;
     flex-grow: 1;
     padding-top: 65px;
-    padding-bottom: 50px;
+    padding-bottom: 60px;
     justify-content: flex-start;
   }
 </style>
