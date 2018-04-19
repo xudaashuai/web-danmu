@@ -56,7 +56,7 @@
           content: msg,
           name: this.name
         })
-        this.socket.emit('message', {msg: msg, name: '徐大帅'})
+        this.socket.emit('message', {msg: msg, name: this.name})
         this.$nextTick(() => document.getElementById('myData').scrollTop = document.getElementById('myData').scrollHeight);
       },
       setName() {
