@@ -1,6 +1,6 @@
 <template>
   <div class="row main bg-accent">
-    <input v-model="mes" class="card " type="text">
+    <input v-model="mes" class="card " type="text" @keyup.enter="send">
     <button :disabled="mes===''" class="btn primary" @click="send">发送</button>
   </div>
 </template>

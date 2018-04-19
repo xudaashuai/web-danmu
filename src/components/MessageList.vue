@@ -4,9 +4,12 @@
       <message-me v-if="mes.type===1" :name="mes.name" :content="mes.content">
 
       </message-me>
-      <message-he v-if="mes.type===2" :name="mes.name" :content="mes.content">
+      <message-he v-else-if="mes.type===2" :name="mes.name" :content="mes.content">
 
       </message-he>
+      <message-tip v-else-if="mes.type===3" :content="mes.content">
+
+      </message-tip>
     </template>
   </div>
 </template>
@@ -14,9 +17,11 @@
 <script>
   import MessageMe from "./MessageMe";
   import MessageHe from "./MessageHe";
+  import MessageTip from "./MessageTip";
 
   export default {
     components: {
+      MessageTip,
       MessageHe,
       MessageMe
     },
@@ -32,9 +37,11 @@
   .main {
     display: flex;
     flex-direction: column;
-    overflow: auto;
+    overflow-y: auto;
     margin: 0;
-    margin-top: 60px;
-    margin-bottom: 50px;
+    flex-grow: 1;
+    padding-top: 65px;
+    padding-bottom: 50px;
+    justify-content: flex-start;
   }
 </style>

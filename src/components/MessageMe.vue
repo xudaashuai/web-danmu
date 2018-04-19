@@ -30,6 +30,7 @@
     min-height:100px;
     margin: 0;
     padding: 0.1rem;
+    flex-grow: 0;flex-shrink:0;
   }
   .icon {
     height: 40px;

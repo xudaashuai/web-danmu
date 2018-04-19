@@ -31,19 +31,22 @@
     min-height: 100px;
     margin: 0;
     padding: 0.1rem;
+    flex-grow: 0;flex-shrink:0;
   }
 
   .icon {
     height: 40px;
     min-width: 40px;
+    margin: 0.5em 0;
   }
 
   .right {
-    margin-left: 5px;
+    margin: 0 0 0 5px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     flex-grow: 1;
+    align-self: flex-start;
   }
 .text{
   word-break: break-all;
