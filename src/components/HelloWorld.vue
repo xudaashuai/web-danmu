@@ -71,7 +71,7 @@
             console.log(data)
             this.messages.push({
               content: data.msg,
-              name: '徐小帅',
+              name: data.name,
               type: 2
             })
             this.$nextTick(() => document.getElementById('myData').scrollTop = document.getElementById('myData').scrollHeight);

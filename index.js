@@ -30,7 +30,7 @@ socketIO.on('connection', function (socket) {
   })
   socket.on('message', data => {
     console.log(data)
-    socket.to(roomId).emit('message', {msg: data.msg, user: socket.user.id})
+    socket.to(roomId).emit('message', {msg: data.msg, name: socket.user.name})
   })
 });
 
